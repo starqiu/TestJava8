@@ -41,6 +41,13 @@ public class TestReduce {
 				.map(String::toUpperCase)
 				.collect(Collectors.joining(",") )
 				);
+		
+		
+		int[] arr1 ={1,3,5,3,2,4,6,1,0,1};
+		Arrays.stream(arr1)
+				.filter(x->x!=0)
+				.sorted()
+				.forEach(System.out::println);
 	}
 
 }
