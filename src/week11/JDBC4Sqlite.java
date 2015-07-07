@@ -25,11 +25,11 @@ public class JDBC4Sqlite {
 		ResultSet rs = stat.executeQuery(sql);
 		while (rs.next()) {
 			String name = rs.getString("name");
-			int age = rs.getString("age");
+			String age = rs.getString("age");
 			boolean gender = rs.getBoolean(4);
 			
 			System.out.printf("name = %s; occupation = %s\n",
-				name, occupation);
+				name, age);
 		}
 
 		rs.close();

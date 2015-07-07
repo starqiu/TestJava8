@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 import java.util.function.IntToDoubleFunction;
+import java.util.stream.Stream;
 
 /*
  * ============================================================
@@ -112,6 +113,15 @@ public class Lambda {
 		D d = new D();
 		d.say();//"C says"
 	}
+	public static void test(){
+		String[] stringArray = { "Barbara", "James", "Mary", "John", "Patricia", "Robert", "Michael", "Linda" };
+		Stream.of(stringArray).mapToInt(String::length).forEach(x->System.out.printf("%s ",x));
+		System.out.println();
+		Stream.of(stringArray).mapToInt(String::length).sorted().forEach(x->System.out.printf("%s ",x));
+		System.out.println();
+		Stream.of(stringArray).mapToInt(String::length).sorted().limit(3).forEach(x->System.out.printf("%s ",x));
+	}
+	
 	/**
 	 * @param args
 	 */
@@ -121,6 +131,9 @@ public class Lambda {
 //		serilizable();
 //		methodReference();
 //		new Lambda().multiExtends();
+//		test();
+		double f = 6f/7;
+		System.out.println(f);
 	}
 
 }

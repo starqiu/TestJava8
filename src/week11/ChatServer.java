@@ -56,7 +56,7 @@ public class ChatServer extends JFrame implements Runnable {
 
     public void broadcastMsg( String str ) {
         try {
-            for(Connection client : clients) {
+            for(Connection1 client : clients) {
                 client.sendMsg(str);
             }
         } catch (Exception e) {
@@ -71,7 +71,7 @@ public class ChatServer extends JFrame implements Runnable {
     public final static int DEFAULT_PORT = 6543;
     protected ServerSocket listen_socket;
     Thread thread;
-    java.util.Vector<Connection> clients = new java.util.Vector<>();
+    java.util.Vector<Connection1> clients = new java.util.Vector<>();
 
     public void ServerListen() {
         try {
@@ -88,7 +88,7 @@ public class ChatServer extends JFrame implements Runnable {
         try {
             while(true) {
                 Socket client_socket = listen_socket.accept();
-                Connection c = new Connection(client_socket, this);
+                Connection1 c = new Connection1(client_socket, this);
                 clients.add( c );
                 processMsg( "One Client Comes in");
             }
@@ -98,13 +98,13 @@ public class ChatServer extends JFrame implements Runnable {
     }
 }
 
-class Connection extends Thread {
+class Connection1 extends Thread {
     protected Socket client;
     protected BufferedReader in;
     protected PrintWriter out;
     ChatServer server;
 
-    public Connection(Socket client_socket, ChatServer server_frame) {
+    public Connection1(Socket client_socket, ChatServer server_frame) {
         client = client_socket;
         server = server_frame;
         try {

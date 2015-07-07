@@ -21,7 +21,7 @@ public class JDBC4Mysql {
 		String user = "root";
 
 		// MySQL����ʱ������           
-		String password = "";
+		String password = "xing123";
 		try {
 			// ������������           
 			Class.forName(driver);
