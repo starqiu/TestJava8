@@ -48,6 +48,11 @@ public class TestReduce {
 				.filter(x->x!=0)
 				.sorted()
 				.forEach(System.out::println);
+		
+		int res = Arrays.stream(arr1)
+										.reduce(0, Integer::sum);
+		
+		System.out.println(res +" == " + Arrays.stream(arr1).sum() );
 	}
 
 }

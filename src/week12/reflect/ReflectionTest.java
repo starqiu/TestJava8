@@ -31,6 +31,8 @@ public class ReflectionTest
 		field.setAccessible(true);//�������Է���private�����Ի򷽷�
 		field.set(obj, 6);
 
+		obj.print();
+		
     }
 }
 
@@ -46,6 +48,10 @@ class DemoTest2
     void output(String str)
     {
         System.out.println("hello: " + str);
+    }
+    
+    public void print(){
+    	System.out.println(x);
     }
 
 }
