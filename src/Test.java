@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Stream;
 
 /*
@@ -25,6 +27,13 @@ public class Test {
 	public static void main(String[] args) {
 		Integer[] arr = {1,4,2,5,2};
 		Stream.of(arr).forEach(System.out::println);
+		List<People> peoples = new ArrayList<People>();
+		People people = new People("starqiu", 27);
+		peoples.add(people);
+		
+		people.setAge(18);
+		
+		System.out.println(peoples.get(0).getAge());
 	}
 }
 
