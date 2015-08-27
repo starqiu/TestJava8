@@ -24,7 +24,12 @@ import java.util.stream.Stream;
  *
  */
 public class Test {
-
+	private static final List<String> names = new ArrayList<String>(){{
+		add("john");
+		System.out.println(names);
+	}};
+	
+	
 	public static void main(String[] args) {
 		Integer[] arr = { 1, 4, 2, 5, 2 };
 		Stream.of(arr).forEach(System.out::println);
@@ -45,8 +50,37 @@ public class Test {
 		Child child = new Child();
 
 		System.out.println(((Father) child).getName());
+		
+		MyClass m1 = new MyClass();
+		MyClass m2 = new MyClass();
+		
+		m1.name = m2.name ="m1";
+		callme(m1,m2);
+		System.out.println(m1.name + " & " + m2.name);
+		
+		names.forEach(System.out::println);
+		
+		Abs abs = new Abs() {
+		};
+		
+		abs.name = "hello";
+		System.out.println(abs.name);
+	}
+	
+	private static void callme(MyClass... m){
+		m[0] = m[1];
+		m[1].name  = "new name";
 	}
 }
+
+abstract class Abs {
+	public String name;
+}
+
+class MyClass {
+	public String name;
+}
+
 
 abstract class Person {
 
