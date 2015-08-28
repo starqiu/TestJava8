@@ -86,7 +86,7 @@ abstract class Person {
 
 	public String m_name = "God";
 
-	public String getName() {
+	public  String getName() {
 		System.out.println(1);
 		return m_name;
 
