@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -8,8 +9,10 @@ class RegExpTest {
         System.out.println(str.matches(".*\\(.*$"));
         Pattern p = Pattern.compile(".*?(?=\\()");
         Matcher m = p.matcher(str);
-        if(m.find()) {
+        while(m.find()) {
             System.out.println(m.group());
         }
+        
+        System.out.println(Arrays.toString(str.split("[\\(\\)]+")));
     }
 }
