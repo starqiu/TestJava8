@@ -1,3 +1,4 @@
+package streams;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -6,7 +7,7 @@ import java.util.stream.Collectors;
  * The SSE USTC Software License
  * 
  * TestReduce.java
- * 2015年6月19日
+ * 2015�?6�?19�?
  * 
  * Copyright (c) 2006 China Payment and Remittance Service Co.,Ltd        
  * All rights reserved.
@@ -14,11 +15,11 @@ import java.util.stream.Collectors;
  */
 
 /**
- * 实现功能： 
+ * 实现功能�? 
  * <p>
  * date	    author            email		           notes<br />
  * --------	---------------------------	---------------<br />
- *2015年6月19日	 邱星            starqiu@mail.ustc.edu.cn	      新建类<br /></p>
+ *2015�?6�?19�?	 邱星            starqiu@mail.ustc.edu.cn	      新建�?<br /></p>
  *
  */
 public class TestReduce {

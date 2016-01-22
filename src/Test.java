@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
+import streams.People;
+
 /*
  * ============================================================
  * The SSE USTC Software License

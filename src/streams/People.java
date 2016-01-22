@@ -1,3 +1,4 @@
+package streams;
 /*
  * ============================================================
  * The SSE USTC Software License

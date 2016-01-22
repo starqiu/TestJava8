@@ -16,14 +16,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/starqiu/.m2/repository/org/jooq/jooq/3.6.2/jooq-3.6.2.jar" sourcepath="/home/starqiu/.m2/repository/org/jooq/jooq/3.6.2/jooq-3.6.2-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.jooq"/>
-			<attribute name="maven.artifactId" value="jooq"/>
-			<attribute name="maven.version" value="3.6.2"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

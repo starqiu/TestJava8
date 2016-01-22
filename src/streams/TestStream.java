@@ -1,3 +1,4 @@
+package streams;
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -8,7 +9,7 @@ import java.util.stream.Stream;
  * The SSE USTC Software License
  * 
  * TestStream.java
- * 2015年6月24日
+ * 2015�?6�?24�?
  * 
  * Copyright (c) 2006 China Payment and Remittance Service Co.,Ltd        
  * All rights reserved.
@@ -16,11 +17,11 @@ import java.util.stream.Stream;
  */
 
 /**
- * 实现功能： 5 methods to create Stream
+ * 实现功能�? 5 methods to create Stream
  * <p>
  * date	    author            email		           notes<br />
  * --------	---------------------------	---------------<br />
- *2015年6月24日	 邱星            starqiu@mail.ustc.edu.cn	      新建类<br /></p>
+ *2015�?6�?24�?	 邱星            starqiu@mail.ustc.edu.cn	      新建�?<br /></p>
  *
  */
 public class TestStream {
