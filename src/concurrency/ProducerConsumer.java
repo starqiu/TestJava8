@@ -32,7 +32,6 @@ public class ProducerConsumer {
         es.execute(productThread2);
         es.execute(consumerThread1);
         es.execute(consumerThread2);
-
         es.shutdown();
     }
 }
